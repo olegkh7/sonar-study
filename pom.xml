@@ -10,6 +10,8 @@
 
     <properties>
 <!--        <maven.compiler.source>14</maven.compiler.source>-->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <sonar.host.url>http://localhost:9000</sonar.host.url>
         <sonar.projectKey>maven-integration</sonar.projectKey>
         <maven-compiler.version>3.8.1</maven-compiler.version>
