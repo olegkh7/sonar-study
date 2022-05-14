@@ -63,6 +63,17 @@
                     <artifactId>sonar-maven-plugin</artifactId>
                     <version>3.4.0.905</version>
                 </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler.version}</version>
+                    <configuration>
+                        <compilerArgs>
+                            <arg>-parameters</arg>
+                        </compilerArgs>
+                        <release>${java.version}</release>
+                        <forceJavacCompilerUse>true</forceJavacCompilerUse>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
