@@ -14,7 +14,8 @@
         <maven.compiler.target>14</maven.compiler.target>
         <sonar.host.url>http://localhost:9000</sonar.host.url>
         <sonar.projectKey>maven-integration</sonar.projectKey>
-<!--        <sonar.login>84c316d76e9b2404676643dee24c2de7af9174c9</sonar.login>-->
+        <maven-compiler.version>3.8.1</maven-compiler.version>
+        <!--        <sonar.login>84c316d76e9b2404676643dee24c2de7af9174c9</sonar.login>-->
     </properties>
 
     <dependencyManagement>
@@ -70,7 +71,7 @@
                         <compilerArgs>
                             <arg>-parameters</arg>
                         </compilerArgs>
-                        <release>${java.version}</release>
+                        <release>14</release>
                         <forceJavacCompilerUse>true</forceJavacCompilerUse>
                     </configuration>
                 </plugin>
