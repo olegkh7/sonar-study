@@ -10,8 +10,6 @@
 
     <properties>
 <!--        <maven.compiler.source>14</maven.compiler.source>-->
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
         <sonar.host.url>http://localhost:9000</sonar.host.url>
         <sonar.projectKey>maven-integration</sonar.projectKey>
         <maven-compiler.version>3.8.1</maven-compiler.version>
@@ -63,17 +61,6 @@
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
                     <version>3.4.0.905</version>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${maven-compiler.version}</version>
-                    <configuration>
-                        <compilerArgs>
-                            <arg>-parameters</arg>
-                        </compilerArgs>
-                        <release>14</release>
-                        <forceJavacCompilerUse>true</forceJavacCompilerUse>
-                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>

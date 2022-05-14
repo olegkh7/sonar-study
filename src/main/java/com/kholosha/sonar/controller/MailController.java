@@ -9,7 +9,7 @@ public class MailController {
     private static final String JDBC_PASSWORD = "wdfew";
     @GetMapping
     public String greeting() {
-        var c = "df";
+        String c = "df";
         return "Hello";
     }
 }
